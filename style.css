@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    min-height: 100vh;   
+}
+
+header, form{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    font-size: 2.4rem
+}
+
+form input {
+    width: 45%;
+}
+
+form input, form button{
+    padding: 0.8rem;
+    border: none;
+    font-size: 1rem;
+    background: white;
+}
+
+form button{
+    color:white;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+background-color: red;
+}
+
+.to-dos-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-dos{
+    list-style-type: none;
+    min-width: 45%;
+}
+
+.todo{
+    margin: 0.5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.todo li{
+    flex: 1;
+}
+
+.del-button, .check-button{
+    border: none;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.new-to-do{
+    padding: 0rem 0.5rem;
+}
+
+/* .check-button, .del-button{
+    pointer-events: none;
+} */
+
+.completed{
+    opacity: 50%;}
